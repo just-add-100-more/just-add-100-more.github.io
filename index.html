@@ -73,7 +73,7 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-		<b>Just Add $100 More</b>: Augmenting Pseudo-LiDAR Point Cloud for Resolving Class-imbalance Problem
+		<b>Just Add $100 More</b>: Augmenting Pseudo-LiDAR Point Cloud <br> for Resolving Class-imbalance Problem
                 <small>
                     <strong>Neurips 2024</strong>
                 </small>
@@ -83,19 +83,16 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://scholar.google.com/citations?user=5da8iKwAAAAJ&hl=en">Binbin Huang</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/mincheol-chang-2a81961b4/?originalSubdomain=kr">Mincheol Chang</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                     </li>
                     <li>
-                        <a href="https://niujinshuchong.github.io/">Zehao Yu</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://scholar.google.co.kr/citations?user=iGSaIU0AAAAJ&hl=ko">Siyeong Lee</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                     </li>
                     <li>
-                        <a href="https://apchenstu.github.io/">Anpei Chen</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://scholar.google.com/citations?user=-x3wvW8AAAAJ">Jinkyu Kim</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                     </li>
                     <li>
-                        <a href="http://www.cvlibs.net/">Andreas Geiger</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    </li>
-                    <li>
-                        <a href="https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en">Shenghua Gao</a><sup>1</sup>
+                        <a href="https://scholar.google.co.kr/citations?user=IYyLBQYAAAAJ">Namil Kim</a><sup>2,3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
                     </li>
                 </ul>
             </div>
@@ -104,9 +101,8 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
-                    <li><sup>1</sup>ShanghaiTech University</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><sup>2</sup>University of Tübingen</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                    <li><sup>3</sup>Tübingen AI Center</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><sup>1</sup>Korea University</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li><sup>2</sup>NAVER LABS</span>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 </ul>
             </h5>
         </div>
@@ -116,31 +112,31 @@
             <div class="col-md-6 col-md-offset-3 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="https://arxiv.org/abs/2403.17888">
+                        <a href="https://arxiv.org/abs/2403.11573">
                             <image src="assets/paper/paper.png"  height="60px">
                                 <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/watch?v=oaHCtB6yiKU">
+                        <a href="https://www.youtube.com">
                             <image src="assets/img/bog/youtube_icon.png" style="border: none;" height="60px">
                                 <h4><strong>Video</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/hbb1/2d-gaussian-splatting">
+                        <a href="https://github.com/">
                         <image src="assets/img/bog/github_pad.png" height="60px">
                             <h4><strong>Code</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://colab.research.google.com/drive/1qoclD7HJ3-o0O1R8cvV3PxLhoDCMsH8W?usp=sharing">
+                        <a href="https://colab.research.google.com/drive/">
                         <image src="assets/img/bog/colab.png" height="60px">
                             <h4><strong>Demo</strong></h4>
                         </a>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/drive/folders/1SJFgt8qhQomHX55Q4xSvYE2C6-8tFll9?usp=drive_link">
+                        <a href="https://drive.google.com/drive/">
                         <image src="assets/img/bog/google-drive.png" height="60px">
                             <h4><strong>Data</strong></h4>
                         </a>
@@ -154,12 +150,15 @@
                 <video class="video" width="100%" id="teaser" loop playsinline autoplay muted src="video/teaser.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
                 <canvas height=0 class="videoMerge" id="teaserMerge"></canvas>
 			</div>
+            
+            <!--
             <div class="col-md-8 col-md-offset-2">
                 <p class="text-center">
                 2DGS adopts (a) 2D oriented disks as surface elements and allows (b) high-quality rendering with gaussian splatting. <br> 
                 <span style="color:#DF62D3; font-size: 18px;"><b>Use the slider as the "splatter"</b></span>
                 </p>
-			</div>
+	    </div>
+            -->
         </div>
 
         <div class="row">
@@ -168,25 +167,32 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    3D Gaussian Splatting (3DGS) has recently revolutionized radiance field reconstruction, 
-                    achieving high quality novel view synthesis and fast rendering speed without baking. 
-                    However, 3DGS fails to accurately represent surfaces due to the multi-view inconsistent 
-                    nature of 3D Gaussians. We present 2D Gaussian Splatting (2DGS), a novel approach to model 
-                    and reconstruct geometrically accurate radiance fields from multi-view images. 
-                    Our key idea is to collapse the 3D volume into a set of 
-                    2D oriented planar Gaussian disks. Unlike 3D Gaussians, 2D Gaussians provide view-consistent 
-                    geometry while modeling surfaces intrinsically. 
-                    To accurately recover thin surfaces and achieve stable optimization, 
-                    we introduce a perspective-accurate 2D splatting process utilizing ray-splat 
-                    intersection and rasterization. Additionally, we incorporate depth distortion 
-                    and normal consistency terms to further enhance the quality of the reconstructions. 
-                    We demonstrate that our differentiable renderer allows for noise-free and detailed geometry 
-                    reconstruction while maintaining competitive appearance quality, 
-                    fast training speed, and real-time rendering.
+		   Typical LiDAR-based 3D object detection models are trained with real-world data collection, 
+                   which is often imbalanced over classes.
+                   To deal with it, augmentation techniques are commonly used, such as copying ground truth LiDAR points
+                   and pasting them into scenes.
+                   However, existing methods struggle with the lack of sample diversity for minority classes 
+                   and the limitation of suitable placement.
+                   In this work, we introduce a novel approach that utilizes pseudo LiDAR point clouds
+                   generated from low-cost miniatures or real-world videos, which is called 
+                   Pseudo Ground Truth augmentation (PGT-Aug).
+                   PGT-Aug involves three key steps: (i) volumetric 3D instance reconstruction 
+                   using a 2D-to-3D view synthesis model, (ii) object-level domain alignment
+                   with LiDAR intensity simulation, and (iii) a hybrid context-aware placement method
+                   from ground and map information. 
+                   We demonstrate the superiority and generality of our method through performance improvements
+                   in extensive experiments conducted on popular benchmarks, 
+                   i.e., \textbf{nuScenes}, \textbf{KITTI}, and \textbf{Lyft}, especially for the datasets 
+                   with large domain gaps captured by different LiDAR configurations.
+                   Our code and data will be publicly available upon publication.                    
                 </p>
+                <div class="overview-cetner">
+		    <img src="assets/overview.png" style="width: 100%; max-width: 69ii1px;">
+                </div>
             </div>
         </div>
 
+        <!--
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -292,12 +298,13 @@
                     </video>
                 </div>
             </div>
-
-            <!-- <div class="col-md-8 col-md-offset-2">
+             
+            <div class="col-md-8 col-md-offset-2">
                 <video class="video" id="comp1" loop playsinline autoplay muted src="video/comp_counter.mp4" onplay="resizeAndPlay(this)" style="height: 0px;"></video>
                 <canvas height=0 class="videoMerge" id="comp1Merge"></canvas>
-            </div> -->
+            </div>
         </div>
+        -->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -307,14 +314,25 @@
                     If you want to cite our work, please use:
                 </p>
 <pre style="font-size: 12px;">
-@inproceedings{Huang2DGS2024,
-    title={2D Gaussian Splatting for Geometrically Accurate Radiance Fields},
-    author={Huang, Binbin and Yu, Zehao and Chen, Anpei and Geiger, Andreas and Gao, Shenghua},
-    publisher = {Association for Computing Machinery},
-    booktitle = {SIGGRAPH 2024 Conference Papers},
-    year      = {2024},
-    doi       = {10.1145/3641519.3657428}
-}</pre>
+@article{DBLP:journals/corr/abs-2403-11573,
+  author       = {Mincheol Chang and
+                  Siyeong Lee and
+                  Jinkyu Kim and
+                  Namil Kim},
+  title        = {Just Add {\textdollar}100 More: Augmenting NeRF-based Pseudo-LiDAR
+                  Point Cloud for Resolving Class-imbalance Problem},
+  journal      = {CoRR},
+  volume       = {abs/2403.11573},
+  year         = {2024},
+  url          = {https://doi.org/10.48550/arXiv.2403.11573},
+  doi          = {10.48550/ARXIV.2403.11573},
+  eprinttype    = {arXiv},
+  eprint       = {2403.11573},
+  timestamp    = {Mon, 08 Apr 2024 18:24:51 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2403-11573.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+</pre>
             </div>
         </div>
         <div class="row">
@@ -324,7 +342,7 @@
                 </h3>
                 <p class="text-justify">
                     The website template was borrowed from <a href="http://mgharbi.com/">Michaël
-                        Gharbi</a> and <a href="https://jonbarron.info/mipnerf360/">MipNeRF360</a>.
+                        Gharbi</a>, <a href="https://jonbarron.info/mipnerf360/">MipNeRF360</a>, and <a href="https://surfsplatting.github.io/">2DGS</a>.
                 </p>
             </div>
         </div>
